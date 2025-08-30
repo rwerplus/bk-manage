@@ -1,4 +1,7 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/sh
+if [ -f "~/.nvm/nvm.sh" ]; then
+  . "~/.nvm/nvm.sh"
+fi
+
 npm run typecheck
 npx lint-staged
