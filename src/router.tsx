@@ -3,11 +3,16 @@ import { createHashRouter, RouteObject } from 'react-router-dom'
 import ErrorPage from './components/error-page'
 import { getDefaultLayout } from './components/layout'
 import HomePage from './pages/home'
+import BookmarkPage from './pages/bookmark'
 
 export const routerObjects: RouteObject[] = [
   {
     path: '/',
-    Component: HomePage,
+    Component: BookmarkPage,
+  },
+  {
+    path: '/b/:id',
+    Component: BookmarkPage,
   },
 ]
 

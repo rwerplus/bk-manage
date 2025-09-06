@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useCallback, useMemo } from 'react'
-import { Popover, PopoverArrow, PopoverContent, PopoverTrigger } from '../ui/popover'
+import { Popover, PopoverAnchor, PopoverContent, PopoverTrigger } from '../ui/popover'
 import { cn } from 'src/lib/utils'
 import { LANGUAGES } from 'src/i18n/config'
 import { Languages, ChevronDown } from 'lucide-react'
@@ -53,7 +53,7 @@ const LanguageSelector = () => {
               </div>
             )
           })}
-          <PopoverArrow />
+          <PopoverAnchor />
         </PopoverContent>
       </Popover>
     </div>
